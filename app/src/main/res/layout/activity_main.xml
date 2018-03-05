@@ -7,7 +7,20 @@
     tools:context="com.example.s156543.journal.MainActivity">
 
     <ListView
+        android:id="@+id/entryList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:longClickable="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        android:onClick="clickFAB"
+        app:srcCompat="@drawable/cactus" />
 
 </android.support.design.widget.CoordinatorLayout>
